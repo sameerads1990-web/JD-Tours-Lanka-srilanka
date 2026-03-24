@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD Tours Lanka - Premium Luxury Bus Hire</title>
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: { 300: '#FDE68A', 400: '#FBBF24', 500: '#D4AF37', 600: '#B8860B' },
+                        dark: { 900: '#0F172A', 800: '#1E293B', 700: '#334155' }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-900 text-gray-200 font-sans antialiased overflow-x-hidden relative">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex flex-col">
+                        <span class="font-serif text-2xl md:text-3xl font-bold tracking-wider text-gold-500 leading-none">JD TOURS</span>
+                        <span class="text-white text-xs md:text-sm tracking-[0.3em] font-medium text-right mt-1">LANKA</span>
+                    </a>
+                </div>
+                <!-- Desktop menu -->
+                <div class="hidden md:flex space-x-8 items-center font-medium">
+                    <a href="index.html" class="nav-link text-white hover:text-gold-500 transition duration-300">Home</a>
+                    <a href="about.html" class="nav-link text-white hover:text-gold-500 transition duration-300">About Us</a>
+                    <a href="fleet.html" class="nav-link text-white hover:text-gold-500 transition duration-300">Our Fleet</a>
+                    <a href="contact.html" class="nav-link text-white hover:text-gold-500 transition duration-300">Contact</a>
+                    <a href="tel:0772388217" class="px-6 py-2 border border-gold-500 text-gold-500 rounded-full hover:bg-gold-500 hover:text-dark-900 transition duration-300 font-bold shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+                        <i class="fas fa-phone-alt mr-2"></i> Book Now
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-white hover:text-gold-500 focus:outline-none transition">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-dark-900/95 backdrop-blur-md absolute w-full left-0 top-full shadow-2xl border-t border-gray-800">
+            <div class="px-4 pt-2 pb-6 space-y-3 font-medium text-center">
+                <a href="index.html" class="block py-3 text-gold-500 border-b border-gray-800">Home</a>
+                <a href="about.html" class="block py-3 text-white hover:text-gold-500 border-b border-gray-800">About Us</a>
+                <a href="fleet.html" class="block py-3 text-white hover:text-gold-500 border-b border-gray-800">Our Fleet</a>
+                <a href="contact.html" class="block py-3 text-white hover:text-gold-500 mb-4">Contact</a>
+                <a href="tel:0772388217" class="inline-block px-8 py-3 bg-gold-500 text-dark-900 rounded-full font-bold w-full">
+                    Call 0772388217
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center justify-center hero-pattern relative">
+        <div class="absolute inset-0 bg-gradient-to-b from-dark-900/60 via-dark-900/40 to-dark-900 w-full h-full"></div>
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto mt-20">
+            <div class="animate-fade-in">
+                <div class="inline-block mb-4 px-4 py-1 rounded-full border border-gold-500/30 bg-gold-500/10 backdrop-blur-sm">
+                    <span class="text-gold-500 tracking-[0.2em] text-xs md:text-sm uppercase font-semibold">Premium Transport Service in Sri Lanka</span>
+                </div>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-white mb-6 leading-tight drop-shadow-xl">
+                    Travel in <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-400 via-gold-500 to-yellow-600">Absolute Luxury</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-3xl mx-auto font-light leading-relaxed">
+                    JD Tours Lanka provides the highest standard of luxury bus hire. From corporate events to perfect getaways, experience safety, comfort, and elegance on every journey.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-5 justify-center mt-8">
+                    <a href="fleet.html" class="px-8 py-4 bg-gradient-to-r from-gold-500 to-gold-600 text-dark-900 rounded-full font-bold hover:from-gold-400 hover:to-gold-500 transition-all duration-300 transform hover:-translate-y-1 shadow-[0_10px_30px_rgba(212,175,55,0.3)]">
+                        Explore Our Fleet <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="contact.html" class="px-8 py-4 border-2 border-white/50 text-white rounded-full font-bold hover:bg-white hover:text-dark-900 transition-all duration-300 backdrop-blur-sm">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce flex flex-col items-center opacity-70">
+            <span class="text-xs tracking-widest uppercase mb-2 text-gray-400">Scroll</span>
+            <i class="fas fa-chevron-down text-gold-500"></i>
+        </div>
+    </section>
+
+    <!-- Services / Features Section -->
+    <section class="py-24 bg-dark-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-gold-500 tracking-widest text-sm uppercase font-semibold mb-2">Why Choose Us</h2>
+                <h3 class="text-3xl md:text-5xl font-serif font-bold text-white">The JD Tours Experience</h3>
+                <div class="h-1 w-20 bg-gold-500 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-card p-8 rounded-2xl reveal">
+                    <div class="w-14 h-14 bg-dark-800 rounded-full flex items-center justify-center mb-6 border border-gold-500/20 text-gold-500 text-2xl shadow-[0_0_15px_rgba(212,175,55,0.15)]">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Supreme Comfort</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Plush reclining seating, ample legroom, and climate control ensuring maximum comfort throughout your entire journey.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="glass-card p-8 rounded-2xl reveal delay-100">
+                    <div class="w-14 h-14 bg-dark-800 rounded-full flex items-center justify-center mb-6 border border-gold-500/20 text-gold-500 text-2xl shadow-[0_0_15px_rgba(212,175,55,0.15)]">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Unmatched Safety</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">State-of-the-art safety features, regular maintenance, and rigorous standards to ensure you arrive securely.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="glass-card p-8 rounded-2xl reveal delay-200">
+                    <div class="w-14 h-14 bg-dark-800 rounded-full flex items-center justify-center mb-6 border border-gold-500/20 text-gold-500 text-2xl shadow-[0_0_15px_rgba(212,175,55,0.15)]">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Expert Drivers</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Highly trained, professional, and courteous chauffeurs with extensive knowledge of Sri Lankan routes.</p>
+                </div>
+                <!-- Feature 4 -->
+                <div class="glass-card p-8 rounded-2xl reveal delay-300">
+                    <div class="w-14 h-14 bg-dark-800 rounded-full flex items-center justify-center mb-6 border border-gold-500/20 text-gold-500 text-2xl shadow-[0_0_15px_rgba(212,175,55,0.15)]">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-white mb-3">Modern Amenities</h4>
+                    <p class="text-gray-400 text-sm leading-relaxed">Equipped with entertainment systems, Wi-Fi, mood lighting, and charging ports for a modern travel experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Fleet Preview -->
+    <section class="py-24 bg-dark-800 border-y border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 reveal">
+                <div>
+                    <h2 class="text-gold-500 tracking-widest text-sm uppercase font-semibold mb-2">Our Vehicles</h2>
+                    <h3 class="text-3xl md:text-5xl font-serif font-bold text-white">Premium Fleet</h3>
+                </div>
+                <div class="mt-6 md:mt-0">
+                    <a href="fleet.html" class="text-gold-500 hover:text-white transition font-medium border-b border-gold-500 pb-1">View Full Fleet <i class="fas fa-arrow-right text-sm ml-1"></i></a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Fleet Item -->
+                <div class="group rounded-2xl overflow-hidden relative reveal">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/60 to-transparent z-10 opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                    <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1000&q=80" alt="Super Luxury Coach" class="w-full h-[400px] object-cover transform group-hover:scale-110 transition duration-700 ease-in-out">
+                    <div class="absolute bottom-0 left-0 p-8 z-20 w-full transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+                        <span class="bg-gold-500 text-dark-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">45 Seater</span>
+                        <h4 class="text-3xl font-serif font-bold text-white mb-2">Super Luxury Coach</h4>
+                        <p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition duration-300 delay-100">Ultimate comfort for large groups, featuring premium seating and panoramic views.</p>
+                        <a href="contact.html" class="text-gold-500 border border-gold-500 hover:bg-gold-500 hover:text-dark-900 rounded-full px-5 py-2 text-sm font-semibold transition opacity-0 group-hover:opacity-100 inline-block">Book Now</a>
+                    </div>
+                </div>
+                <!-- Fleet Item -->
+                <div class="group rounded-2xl overflow-hidden relative reveal delay-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-900/60 to-transparent z-10 opacity-80 group-hover:opacity-90 transition-opacity duration-300"></div>
+                    <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=1000&q=80" alt="Luxury Mini Coach" class="w-full h-[400px] object-cover transform group-hover:scale-110 transition duration-700 ease-in-out">
+                    <div class="absolute bottom-0 left-0 p-8 z-20 w-full transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+                        <span class="bg-gold-500 text-dark-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3 inline-block">29 Seater</span>
+                        <h4 class="text-3xl font-serif font-bold text-white mb-2">VIP Mini Coach</h4>
+                        <p class="text-gray-300 text-sm mb-4 opacity-0 group-hover:opacity-100 transition duration-300 delay-100">Perfect for medium groups, VIP tours, and corporate excursions with absolute privacy.</p>
+                        <a href="contact.html" class="text-gold-500 border border-gold-500 hover:bg-gold-500 hover:text-dark-900 rounded-full px-5 py-2 text-sm font-semibold transition opacity-0 group-hover:opacity-100 inline-block">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gold-600"></div>
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10"></div>
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-dark-900/40 to-transparent"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-3xl md:text-5xl font-serif font-bold text-dark-900 mb-6">Ready for an Unforgettable Journey?</h2>
+            <p class="text-dark-800 text-lg mb-10 max-w-2xl mx-auto font-medium">Book your luxury transport with JD Tours Lanka today and experience travel the way it was meant to be.</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="tel:0772388217" class="flex items-center px-8 py-4 bg-dark-900 text-gold-500 rounded-full font-bold text-lg hover:bg-black transition shadow-xl transform hover:-translate-y-1">
+                    <i class="fas fa-phone-alt mr-3"></i> 077 238 8217
+                </a>
+                <a href="tel:0759158819" class="flex items-center px-8 py-4 bg-dark-900 text-white rounded-full font-bold text-lg hover:bg-black transition shadow-xl transform hover:-translate-y-1">
+                    <i class="fas fa-phone-alt mr-3"></i> 075 915 8819
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 pt-20 pb-10 border-t border-gray-800 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2 lg:col-span-1">
+                    <a href="index.html" class="flex flex-col mb-6 inline-block">
+                        <span class="font-serif text-2xl font-bold tracking-wider text-gold-500 leading-none">JD TOURS</span>
+                        <span class="text-white text-xs tracking-[0.3em] font-medium mt-1">LANKA</span>
+                    </a>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Setting the gold standard for passenger transport in Sri Lanka. Exceptional vehicles, professional drivers, and unparalleled service.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-dark-800 flex items-center justify-center text-gray-400 hover:text-gold-500 hover:bg-gray-800 transition border border-gray-800"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-dark-800 flex items-center justify-center text-gray-400 hover:text-gold-500 hover:bg-gray-800 transition border border-gray-800"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-dark-800 flex items-center justify-center text-gray-400 hover:text-gold-500 hover:bg-gray-800 transition border border-gray-800"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-white font-serif tracking-wider font-bold mb-6 text-lg">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="index.html" class="text-gray-400 hover:text-gold-500 transition flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-gold-500"></i> Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-gold-500 transition flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-gold-500"></i> About Us</a></li>
+                        <li><a href="fleet.html" class="text-gray-400 hover:text-gold-500 transition flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-gold-500"></i> Our Fleet</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-gold-500 transition flex items-center"><i class="fas fa-chevron-right text-xs mr-2 text-gold-500"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1 md:col-span-2 lg:col-span-2">
+                    <h4 class="text-white font-serif tracking-wider font-bold mb-6 text-lg">Contact Information</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li class="flex items-start">
+                            <div class="mt-1 w-8 text-gold-500"><i class="fas fa-map-marker-alt text-lg"></i></div>
+                            <span class="text-gray-400">No 121/2 A Jamburaliya Madapatha, <br>Piliyandala, Sri Lanka</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-8 text-gold-500"><i class="fas fa-phone-alt text-lg"></i></div>
+                            <span class="text-gray-400">077 238 8217 / 075 915 8819</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-8 text-gold-500"><i class="fas fa-envelope text-lg"></i></div>
+                            <span class="text-gray-400">info@jdtourslanka.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 text-center flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm mb-4 md:mb-0">&copy; <span id="year"></span> JD Tours Lanka. All rights reserved.</p>
+                <div class="text-gray-500 text-sm">
+                    Designed with luxury in mind.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
